@@ -1,0 +1,64 @@
+.area-geral {
+  background-color: var(--blue-principal-color);
+  height: auto;
+  width: 100%;
+  
+}
+
+.area-title {
+  font-family: "Lora", serif;
+  font-size: 50px;
+  color: var(--text-primary-color);
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  
+}
+
+.area-items-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  padding: 40px;
+}
+
+.area-card {
+  background-color: var(--white-secondary-color);
+  border-radius: 28px;
+  padding: 24px;
+  height: auto;
+}
+
+.area-card-title {
+  color: var(--text-secondary-color);
+  text-align: center;
+  font-family: "Lora";
+  font-size: 32px;
+}
+
+.area-card-description {
+  color: black;
+  font-family: "Montserrat";
+  font-size: 24px;
+}
+
+.area-description-strong{
+    font-weight: 500;
+}
+
+.area-card-img {
+  height: 50px;
+  width: 50px;
+}
+
+.area-card-img-container {
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .container-servicos {
+    grid-template-columns: 1fr;
+  }
+}

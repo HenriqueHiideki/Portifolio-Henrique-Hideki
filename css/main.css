@@ -1,45 +1,48 @@
-:root{
-    --blue-principal-color: #192448;
-    --blue-secondary-color: #1d346d;
-    --blue-tertiary-color: #1d4392;
-    --pink-primary-color: #fc036c;
+:root {
+  --blue-principal-color: #192448;
+  --blue-secondary-color: #1d346d;
+  --blue-tertiary-color: #1d4392;
+  --pink-primary-color: #fc036c;
 
-    --white-primary-color: #fcfdff;
-    --white-secondary-color: #F8FAFF;
+  --white-primary-color: #e3e5e8;
+  --white-secondary-color: #f8faff;
+  --white-tertiary-color: #e0e0e5;
 
-    --text-primary-color: #ffffff;
-    --text-secondary-color: #3a89c9
+  --text-primary-color: #ffffff;
+  --text-secondary-color: #3a89c9;
 }
 
 @font-face {
-    font-family: "Noto Sans";
-    src: url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
-}
-
-@font-face{
-    font-family: "Roboto Slab";
-    src: url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
+  font-family: "Noto Sans";
+  src: url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 }
 
 @font-face {
-    font-family: "Montserrat";
-    src: url("fonts/Montserrat-Regular.woff2") format("woff2"),
-         url("fonts/Montserrat-Regular.ttf") format("truetype");
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Roboto Slab";
+  src: url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
 }
 
 @font-face {
-    font-family: "Lora";
-    src: url("fonts/Lora-Regular.woff2") format("woff2"),
-         url("fonts/Lora-Regular.ttf") format("truetype");
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Montserrat";
+  src:
+    url("fonts/Montserrat-Regular.woff2") format("woff2"),
+    url("fonts/Montserrat-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lora";
+  src:
+    url("fonts/Lora-Regular.woff2") format("woff2"),
+    url("fonts/Lora-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
 }
 
 /* RESETA CSS DA PÁGINA */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
