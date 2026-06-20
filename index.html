@@ -11,6 +11,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -31,8 +34,25 @@
             </ul>
         </nav>
     </header>
-    <section>
-        <div class="hero-img"></div>
+    <section class="hero">
+        <video autoplay muted loop playsinline class="hero-video">
+            <source src="./video/hero-video.mp4" type="video/webm">
+        </video>
+        <div class="hero-title">
+            <h1 class="hero-title">Olá! Sou Henrique Hideki,<span class="hero-title-wrap"> desenvolvedor de software jr.
+                </span></h1>
+        </div>
+        <div class="hero-carousel">
+            <div class="hero-carousel-list">
+                <div class="hero-carousel-item"><img src="./img/icon-nodejs.svg" alt=""></div>
+                <div class="hero-carousel-item"><img src="./img/icon-typescript.svg" alt=""></div>
+                <div class="hero-carousel-item"><img src="./img/icon-reactjs.svg" alt=""></div>
+                <div class="hero-carousel-item"><img src="./img/icon-angular.svg" alt=""></div>
+                <div class="hero-carousel-item"><img src="./img/icon-docker.svg" alt=""></div>
+                <div class="hero-carousel-item"><img src="./img/icon-aws.svg" alt=""></div>
+                <div class="hero-carousel-item"><img src="./img/icon-git.svg" alt=""></div>
+            </div>
+        </div>
     </section>
 </body>
 

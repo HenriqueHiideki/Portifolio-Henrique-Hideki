@@ -4,7 +4,7 @@
     --blue-tertiary-color: #1d4392;
     --pink-primary-color: #fc036c;
 
-    --white-primary-color: ##fcfdff;
+    --white-primary-color: #fcfdff;
 
     --text-primary-color: #ffffff;
 }
@@ -12,6 +12,11 @@
 @font-face {
     font-family: "Noto Sans";
     src: url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+}
+
+@font-face{
+    font-family: "Roboto Slab";
+    src: url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
 }
 
 /* RESETA CSS DA PÁGINA */
