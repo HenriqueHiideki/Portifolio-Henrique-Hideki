@@ -5,8 +5,10 @@
     --pink-primary-color: #fc036c;
 
     --white-primary-color: #fcfdff;
+    --white-secondary-color: #F8FAFF;
 
     --text-primary-color: #ffffff;
+    --text-secondary-color: #3a89c9
 }
 
 @font-face {
@@ -17,6 +19,22 @@
 @font-face{
     font-family: "Roboto Slab";
     src: url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("fonts/Montserrat-Regular.woff2") format("woff2"),
+         url("fonts/Montserrat-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Lora";
+    src: url("fonts/Lora-Regular.woff2") format("woff2"),
+         url("fonts/Lora-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
 }
 
 /* RESETA CSS DA PÁGINA */

@@ -33,6 +33,7 @@ header {
     display: flex;
     gap: 26px;
     margin-right: 40px;
+    list-style: none;
 }
 
 .nav-title {
