@@ -27,7 +27,7 @@
 .hero-title{
     font-family: "Roboto Slab";
     font-size: 75px;
-    font-weight: 600;
+    font-weight: 400;
     margin-left: 45px;
     color: var(--text-primary-color);
 }
@@ -65,7 +65,6 @@
     display: flex;
     gap: 16px;
     align-items: center;
-    justify-content: center;
 }
 .hero-carousel-item img{
     height: 35px;
@@ -73,11 +72,12 @@
     opacity: 1.0;
     transition: opacity 0.3s ease;
 }
+
 @keyframes scrollInfinito{
     0% {
         transform: translateX(0);
     }
     100%{
-        transform: translateX(-50%);
+        transform: translateX(-33.33%);
     }
 }
