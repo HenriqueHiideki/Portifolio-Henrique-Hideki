@@ -14,7 +14,14 @@
   justify-content: center;
   align-items: center;
   padding: 30px;
-  
+
+}
+
+.area-description{
+  font-size: 32px;
+  color: var(--text-primary-color);
+  font-weight: 400;
+  text-align: center;
 }
 
 .area-items-container {
@@ -25,7 +32,7 @@
 }
 
 .area-card {
-  background-color: var(--white-secondary-color);
+  background-color: var(--white-primary-color);
   border-radius: 28px;
   padding: 24px;
   height: auto;
@@ -36,12 +43,14 @@
   text-align: center;
   font-family: "Lora";
   font-size: 32px;
+  font-weight: 500;
 }
 
 .area-card-description {
   color: black;
   font-family: "Montserrat";
   font-size: 24px;
+  padding: 20px;
 }
 
 .area-description-strong{
@@ -55,6 +64,7 @@
 
 .area-card-img-container {
   margin-top: 20px;
+  padding: 10px;
 }
 
 @media (max-width: 768px) {

@@ -1,0 +1,140 @@
+.exp-geral {
+  width: 100%;
+  height: auto;
+  background-color: var(--white-secondary-color);
+  padding: 80px 20px;
+}
+
+.exp-title {
+  font-family: "Lora";
+  font-size: 45px;
+  font-weight: 600;
+  color: var(--text-secondary-color);
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.exp-cargos {
+  position: relative;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+
+.exp-cargos::before {
+  content: "";
+  position: absolute;
+  top: 64px;
+  bottom: 0;
+  left: 50%;
+  width: 1px;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.exp-progress-line {
+  position: absolute;
+  top: 64px;
+  left: 50%;
+  width: 1px;
+  height: 0px;
+  background: rgba(20, 18, 89, 0.75);
+  transition: height 0.1s linear;
+}
+
+.exp-ponto-movel {
+  position: absolute;
+  left: 50%;
+  top: 64px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--text-secondary-color);
+  box-shadow:
+    0 0 8px 2px rgba(255, 255, 255, 0.9),
+    0 0 22px 6px rgba(255, 255, 255, 0.35);
+  transform: translate(-50%, -50%);
+  transition: top 0.1s linear;
+  z-index: 5;
+}
+
+.exp-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1px 1fr;
+  column-gap: 60px;
+  align-items: start;
+  margin-bottom: 80px;
+}
+
+.exp-container:last-child {
+  margin-bottom: 0;
+}
+
+.exp-left {
+  grid-column: 1;
+  text-align: right;
+}
+
+.exp-title-job {
+  font-family: "Lora";
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--blue-tertiary-color);
+  margin: 0 0 6px 0;
+}
+
+.exp-company {
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-tertiary-color);
+  margin: 0;
+}
+
+.exp-periodo {
+  grid-column: 1 / span 3;
+  text-align: right;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--text-tertiary-color);
+  margin: 0 0 14px 0;
+}
+
+.exp-right {
+  grid-column: 3;
+}
+
+.exp-description {
+  color: var(--text-tertiary-color);
+  font-family: "Montserrat";
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Responsivo */
+@media (max-width: 800px) {
+  .exp-cargos::before,
+  .exp-progress-line {
+    left: 12px;
+  }
+  .exp-ponto-movel {
+    left: 12px;
+  }
+  .exp-container {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+    padding-left: 40px;
+  }
+  .exp-left, .exp-right {
+    grid-column: 1;
+    text-align: left;
+  }
+  .exp-periodo {
+    grid-column: 1;
+    text-align: left;
+  }
+}
