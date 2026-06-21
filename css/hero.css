@@ -98,6 +98,8 @@
   color: var(--text-primary-color);
   text-decoration: none;
   font-size: 28px;
+  position: relative;
+  z-index: 9999;
 }
 
 @keyframes scrollInfinito {
