@@ -1,0 +1,44 @@
+.about-section {
+    padding: 8rem 4%;
+    background-color: var(--color-primary);
+}
+
+.about-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.about-img-wrapper {
+    flex-shrink: 0;
+}
+
+.about-img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    transition: border-color 0.4s ease;
+}
+
+.about-container:hover .about-img {
+    border-color: var(--emphasis-color);
+}
+
+.about-content {
+    max-width: 650px;
+}
+
+.about-text {
+    color: var(--text-description);
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.about-text strong {
+    color: var(--emphasis-color);
+}

@@ -1,22 +1,42 @@
-:root{
-    --blue-principal-color: #192448;
-    --blue-secondary-color: #1d346d;
-    --blue-tertiary-color: #1d4392;
-    --pink-primary-color: #fc036c;
-
-    --white-primary-color: ##fcfdff;
-
-    --text-primary-color: #ffffff;
+:root {
+    --color-primary: #060b16;
+    --color-secondary: #0b1325;
+    --color-card: rgba(17, 24, 39, 0.7);
+    
+    --text-main: #f3f4f6;
+    --text-description: #9ca3af;
+    --emphasis-color: #00e5ff;
+    --emphasis-glow: rgba(0, 229, 255, 0.3);
+    
+    --font-title: 'Montserrat', sans-serif;
+    --font-body: 'Noto Sans', sans-serif;
+    --font-code: monospace;
 }
 
-@font-face {
-    font-family: "Noto Sans";
-    src: url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
-}
-
-/* RESETA CSS DA PÁGINA */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background-color: var(--color-primary);
+    color: var(--text-main);
+    font-family: var(--font-body);
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+.section-title {
+    font-family: var(--font-title);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--text-main);
+}
+
+.section-title.center {
+    text-align: center;
 }

@@ -1,0 +1,68 @@
+.area-geral {
+    padding: 6rem 4%;
+    background-color: var(--color-secondary);
+}
+
+.area-description {
+    text-align: center;
+    color: var(--text-description);
+    font-size: 1.1rem;
+    margin-bottom: 4rem;
+}
+
+.area-items-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.area-card {
+    background-color: var(--color-card);
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    border-radius: 12px;
+    padding: 2rem;
+    backdrop-filter: blur(8px);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.area-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--emphasis-color);
+    box-shadow: 0 10px 25px var(--emphasis-glow);
+}
+
+.area-card-title {
+    font-family: var(--font-title);
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--text-main);
+}
+
+.area-card-description {
+    color: var(--text-description);
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+}
+
+.highlight {
+    color: var(--text-main);
+    font-weight: 600;
+}
+
+.area-card-img-container {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.area-card-img {
+    height: 28px;
+    width: auto;
+    opacity: 0.8;
+}

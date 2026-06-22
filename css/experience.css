@@ -1,0 +1,67 @@
+.exp-geral {
+    padding: 8rem 4%;
+    background-color: var(--color-primary);
+}
+
+.exp-cargos {
+    max-width: 900px;
+    margin: 4rem auto 0 auto;
+    position: relative;
+}
+
+.exp-progress-line {
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--emphasis-color), rgba(255,255,255,0.05));
+}
+
+.exp-container {
+    position: relative;
+    padding-left: 60px;
+    margin-bottom: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+}
+
+.exp-dot {
+    position: absolute;
+    left: 12px;
+    top: 6px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    border: 3px solid var(--emphasis-color);
+    box-shadow: 0 0 10px var(--emphasis-glow);
+    z-index: 2;
+}
+
+.exp-periodo {
+    grid-column: 1 / -1;
+    font-family: var(--font-code);
+    color: var(--emphasis-color);
+    font-size: 0.9rem;
+    margin-bottom: -1rem;
+}
+
+.exp-title-job {
+    font-family: var(--font-title);
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+.exp-company {
+    color: var(--text-description);
+    font-size: 0.95rem;
+    margin-top: 0.25rem;
+}
+
+.exp-description {
+    color: var(--text-description);
+    font-size: 1rem;
+}
