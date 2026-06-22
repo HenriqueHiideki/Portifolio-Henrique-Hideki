@@ -1,124 +1,132 @@
-.hero-video {
-  width: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  transform: translate(-50%, -50%);
-  object-fit: cover;
-  z-index: 1;
-
-  opacity: 0.15;
-  filter: blur(1px);
-}
-
 .hero {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  overflow: hidden;
-  background-color: #060c1f;
-  flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: var(--color-primary);
 }
 
-.hero-title,
-.hero-icon {
-  margin: 0;
-  padding: 0;
+.hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: 1;
+    opacity: 0.12;
+    filter: blur(1px);
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, var(--color-primary) 5%, transparent 90%);
+    z-index: 2;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    padding: 0 1rem;
 }
 
 .hero-title {
-  font-family: "Roboto Slab";
-  font-size: 75px;
-  font-weight: 400;
-  margin-left: 45px;
-  margin-bottom: 15px;
-  color: var(--text-primary-color);
-  position: relative;
-  z-index: 3;
+    font-family: var(--font-title);
+    font-size: 3.5rem;
+    font-weight: 400;
+    color: var(--text-main);
+    margin-bottom: 2rem;
+    letter-spacing: -1px;
 }
 
 .hero-title-wrap {
-  display: block;
-  flex-wrap: wrap;
+    display: block;
+    font-weight: 700;
+    color: var(--accent-color);
+    text-shadow: 0 0 20px var(--accent-glow);
+    margin-top: 0.5rem;
 }
 
-.hero-carousel {
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 80px;
-  position: absolute;
-  z-index: 4;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  background-color: rgb(207, 207, 210);
-}
-
-.hero-carousel-list {
-  display: flex;
-  gap: 60px;
-  padding: 0 30px;
-  flex-shrink: 0;
-}
-
-.hero-carousel-item {
-  color: var(--text-primary-color);
-  display: flex;
-  gap: 16px;
-  align-items: center;
-}
-
-.hero-carousel-item img {
-  height: 35px;
-  width: auto;
-  opacity: 1;
-  transition: opacity 0.3s ease;
-}
-
-.hero-carousel-track{
-display: flex;
-width: max-content;
-animation: scrollInfinito 20s linear infinite;
-}
-
-.hero-icon {
-  display: flex;
-  gap: 30px;
-  margin-left: 95px;
-}
-
-.hero-img {
-  height: 36px;
-  width: 36px;
+.hero-icon-container {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
 }
 
 .hero-icon-links {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  color: var(--text-primary-color);
-  text-decoration: none;
-  font-size: 28px;
-  position: relative;
-  z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+    background-color: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 50%;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-carousel:hover .hero-carousel-track{
-  animation-play-state: paused;
+.hero-icon-links:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent-color);
+    box-shadow: 0 0 15px var(--accent-glow);
+    background-color: rgba(0, 229, 255, 0.05);
+}
+
+.hero-img {
+    height: 24px;
+    width: 24px;
+}
+
+.hero-carousel {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    position: absolute;
+    z-index: 4;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    background: rgba(11, 19, 37, 0.6);
+    backdrop-filter: blur(10px);
+}
+
+.hero-carousel-track {
+    display: flex;
+    width: max-content;
+    animation: scrollInfinito 22s linear infinite;
+}
+
+.hero-carousel:hover .hero-carousel-track {
+    animation-play-state: paused;
+}
+
+.hero-carousel-list {
+    display: flex;
+    gap: 80px;
+    padding: 0 40px;
+    flex-shrink: 0;
+}
+
+.hero-carousel-item img {
+    height: 38px;
+    width: auto;
+    filter: grayscale(30%) brightness(90%);
+    transition: filter 0.3s ease;
+}
+
+.hero-carousel-item img:hover {
+    filter: grayscale(0%) brightness(100%);
 }
 
 @keyframes scrollInfinito {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
 }
