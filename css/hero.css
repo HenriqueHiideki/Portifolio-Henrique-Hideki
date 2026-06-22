@@ -16,12 +16,12 @@
 .hero {
   position: relative;
   width: 100%;
-  height: calc(100vh - 70px);
+  height: 100vh;
   display: flex;
   align-items: flex-start;
   justify-content: center;
   overflow: hidden;
-  background-color: #0b132b;
+  background-color: #060c1f;
   flex-direction: column;
 }
 
@@ -38,6 +38,8 @@
   margin-left: 45px;
   margin-bottom: 15px;
   color: var(--text-primary-color);
+  position: relative;
+  z-index: 3;
 }
 
 .hero-title-wrap {
