@@ -1,5 +1,5 @@
 .area-geral {
-  background-color: var(--blue-principal-color);
+   background: linear-gradient(to bottom, #202024 0%, var(--blue-secondary-color) 100%);
   height: auto;
   width: 100%;
   
@@ -55,6 +55,7 @@
 
 .area-description-strong{
     font-weight: 500;
+    color: var(--pink-primary-color);
 }
 
 .area-card-img {

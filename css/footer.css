@@ -1,6 +1,7 @@
 .footer-geral {
+  height: auto;
   width: 100%;
-  background-color: var(--white-secondary-color);
+  background-color: var(--text-tertiary-color, #0f0f0f);
   padding: 60px 20px 30px;
 }
 
@@ -24,7 +25,7 @@
 
 .footer-contact-title {
   font-family: "Montserrat";
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 500;
   color: var(--text-tertiary-color);
   margin: 0 0 8px 0;
@@ -42,9 +43,9 @@
   align-items: center;
   gap: 8px;
   font-family: "Montserrat";
-  font-size: 15px;
+  font-size: 24px;
   font-weight: 500;
-  color: var(--text-secondary-color);
+  color: var(--text-primary-color);
   text-decoration: none;
   transition: color 0.2s ease, opacity 0.2s ease;
 }
@@ -69,7 +70,7 @@
   font-family: "Montserrat";
   font-size: 13px;
   font-weight: 400;
-  color: var(--text-tertiary-color);
+  color: var(--text-primary-color);
   text-align: center;
   margin: 0;
 }

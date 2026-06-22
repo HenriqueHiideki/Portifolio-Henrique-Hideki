@@ -1,5 +1,5 @@
 .about-section {
-    background-color: var(--white-secondary-color);
+    background-color: var(--white-tertiary-color);
     width: 100%;
     height: auto;
     display: flex;
@@ -24,15 +24,18 @@
 }
 
 .about-text {
-    color: black;
+    color: var(--text-tertiary-color);
     font-size: 22px;
     font-family: "Montserrat", sans-serif;
     line-height: 1.6;
+    max-width: 1100px;
 }
 
 .about-img {
-    width: 400px;
+    width: 500px;
     height: auto;
-    border-radius: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    aspect-ratio: 1/1;
     margin-left: 50px;
 }

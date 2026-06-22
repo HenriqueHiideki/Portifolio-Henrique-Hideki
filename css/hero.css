@@ -63,10 +63,9 @@
 
 .hero-carousel-list {
   display: flex;
-  width: max-content;
   gap: 60px;
   padding: 0 30px;
-  animation: scrollInfinito 20s linear infinite;
+  flex-shrink: 0;
 }
 
 .hero-carousel-item {
@@ -75,11 +74,18 @@
   gap: 16px;
   align-items: center;
 }
+
 .hero-carousel-item img {
   height: 35px;
   width: auto;
   opacity: 1;
   transition: opacity 0.3s ease;
+}
+
+.hero-carousel-track{
+display: flex;
+width: max-content;
+animation: scrollInfinito 20s linear infinite;
 }
 
 .hero-icon {
@@ -104,11 +110,15 @@
   z-index: 9999;
 }
 
+.hero-carousel:hover .hero-carousel-track{
+  animation-play-state: paused;
+}
+
 @keyframes scrollInfinito {
   0% {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-33.33%);
+    transform: translateX(-50%);
   }
 }
